@@ -40,11 +40,6 @@ $(document).ready(function() {
         $('#secondContent').show();
     });
 
-    // 返回主頁按鈕
-    $('#backToMain').click(function() {
-        $('#mainContent').show();
-        $('#secondContent').hide();
-    });
 
     // 頭像懸停效果
     $('#avatar').hover(

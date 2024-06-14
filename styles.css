@@ -8,6 +8,7 @@ body, html {
 
 .hidden {
     display: none;
+
 }
 
 #welcomePage {
@@ -210,11 +211,6 @@ main #secondContent {
     position: relative;
 }
 
-#backToMain {
-    position: absolute;
-    bottom: -100px;
-    right: -650px;
-}
 
 img.random {
     position: absolute;
