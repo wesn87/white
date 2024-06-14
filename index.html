@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末報告</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="welcomePage">
+        <img src="image/genshin.jpg" alt="">
+    </div>
+
+    <div id="mainPage" class="hidden">
+        <header>
+            <button id="toggleSidebar">☰</button>
+            <h1>welcome to my woooooooorld~</h1>
+        </header>
+        <aside id="sidebar">
+            <div id="avatar"></div>
+            <nav><ul><li>張鈞翔</li></ul></nav>
+            <label class="switch">
+                <input type="checkbox" id="colorToggle">
+                <span class="slider round"></span>
+                <nav><ul><li>明/暗</li></ul></nav>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#" id="mainPageLink">首頁</a></li>
+                    <li><a href="#" id="secondPageLink">興趣/愛好</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main id="content">
+            <div id="mainContent">
+                <div id="avatar1"></div>
+                <h1>張鈞翔</h1>
+                <h3>關於我</h3>
+                <h3>雲林人</h3>
+                <h3>沒啥專長</h3>
+                <h3>崩鐵成癮</h3>
+                <h3>花火我婆</h3>
+            </div>
+
+            <div id="secondContent" class="hidden">
+                <h2>我愛聽:</h2>
+                <h3>
+                    <div id="picture"></div>アイデンティティ
+                </h3>
+
+                <h2>我愛玩:</h2>
+                <h3>
+                    <div id="picture1"></div>崩壞:星穹鐵道
+                </h3>
+
+                <h2>我愛看:</h2>
+                <h3>
+                    <div id="picture2"></div>陰陽眼見子
+                </h3>
+                <button id="backToMain">回首頁</button>
+            </div>
+        </main>
+        <footer>
+            &copy; 2024 Design by 白七
+        </footer>
+    </div>
+</body>
+</html>

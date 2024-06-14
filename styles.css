@@ -1,0 +1,227 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+#welcomePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+#welcomePage h1 {
+    text-align: center;
+}
+
+#mainPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: filter 0.3s;
+}
+
+header, footer {
+    background-color: #202020;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggleSidebar {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -250px;
+    width: 250px;
+    background-color: #303030;
+    color: #ffffff;
+    transition: left 0.3s;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar.show {
+    left: 0;
+}
+
+#sidebar.show + header #toggleSidebar {
+    left: 250px;
+}
+
+#avatar {
+    width: 100px;
+    height: 100px;
+    background: url('image/sparkle.jpg') no-repeat center center / cover;
+    border-radius: 50%;
+    margin: 1em 0;
+    transition: transform 0.3s;
+}
+
+#avatar:hover {
+    transform: scale(1.2);
+}
+
+#avatar1 {
+    width: 150px;
+    height: 150px;
+    background: url('image/sparkle.jpg') no-repeat center center / cover;
+    border-radius: 50%;
+    margin: 1em 0;
+    transition: transform 0.3s;
+}
+
+#avatar1:hover {
+    transform: scale(1.2);
+}
+
+#picture {
+    width: 150px;
+    height: 150px;
+    background: url('image/song.jpg') no-repeat center center / cover;
+    border-radius: 50%;
+    margin: 1em 0;
+    transition: transform 0.3s;
+}
+
+#picture:hover {
+    transform: scale(1.2);
+}
+
+#picture1 {
+    width: 150px;
+    height: 150px;
+    background: url('image/Star_Rail logo.jpg') no-repeat center center / cover;
+    border-radius: 50%;
+    margin: 1em 0;
+    transition: transform 0.3s;
+}
+
+#picture1:hover {
+    transform: scale(1.2);
+}
+
+#picture2 {
+    width: 150px;
+    height: 150px;
+    background: url('image/mywife.jpg') no-repeat center center / cover;
+    border-radius: 50%;
+    margin: 1em 0;
+    transition: transform 0.3s;
+}
+
+#picture2:hover {
+    transform: scale(1.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 1em 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 14px;
+    background-color: #ccc;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s;
+    top: -3px;
+    left: -3px;
+}
+
+input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+main {
+    flex: 1;
+    padding: 1em;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #d5d5d5;
+}
+
+main #secondContent {
+    position: relative;
+}
+
+#backToMain {
+    position: absolute;
+    bottom: -100px;
+    right: -650px;
+}
+
+img.random {
+    position: absolute;
+    width: 250px;
+    height: auto;
+}
+
+.dimmed {
+    filter: brightness(0.5);
+}
